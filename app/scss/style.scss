@@ -22,12 +22,60 @@ Version: 1.0
 	font-weight: 300;
 } */
 
-@media screen and (max-width: 1199px) {
+body,a,input, textarea, select{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+}
+body, input, textarea{
+	color: $black;
+}
+input, textarea, select{
+	outline: none;
+	border-radius: 0;
+}
+a{
+	text-decoration: none;
+	color: red;
+	&:hover{
+		color: red;
+		text-decoration: none;
+	}
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+figure{
+	margin: 0;
+}
+img.alignright {
+	float:right; margin:0 0 1em 1em
+}
+img.alignleft {
+	float:left; margin:0 1em 1em 0
+}
+img.aligncenter {
+	display: block; margin-left: auto; margin-right: auto
+}
+a img.alignright {
+	float:right; margin:0 0 1em 1em
+}
+a img.alignleft {
+	float:left; margin:0 1em 1em 0
+}
+a img.aligncenter {
+	display: block; margin-left: auto; margin-right: auto
+}
+
+@media screen and (max-width: 1229px) {
 	
 }
 @media screen and (max-width: 991px) {
 	
 }
 @media screen and (max-width: 767px) {
+	
+}
+@media screen and (max-width: 575px) {
 	
 }
