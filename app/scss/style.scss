@@ -6,10 +6,20 @@ Description: this is them for Mr. Park
 Version: 1.0
 */
 
-@mixin backgroundImg {
+@mixin bgi{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+@mixin bgc{
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 /* @font-face {
