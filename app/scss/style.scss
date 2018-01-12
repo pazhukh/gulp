@@ -79,7 +79,7 @@ a img.aligncenter {
 
 .main-menu{
 	li{
-	&.current_page_parent, &.current-menu-item, &:hover{
+	&.current-menu-item, &:hover{
 			color: red!important;
 		}
 	}
