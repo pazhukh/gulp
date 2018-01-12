@@ -77,6 +77,26 @@ a img.aligncenter {
 	display: block; margin-left: auto; margin-right: auto
 }
 
+.main-menu{
+	li{
+	&.current_page_parent, &.current-menu-item, &:hover{
+			color: red!important;
+		}
+	}
+}
+
+
+.lang-switch{
+	li{
+		&.current-lang{
+			a{
+				color: red!important;
+			}
+		}
+	}
+}
+
+
 @media screen and (max-width: 1229px) {
 	
 }
