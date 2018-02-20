@@ -6,6 +6,9 @@ var gulp               = require('gulp'),
 gulp.task('sass', function() {
 	return gulp.src('app/scss/*.scss')
 		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({
+			outputStyle: 'expanded'
+		}))
 		.pipe(autoprefixer(['last 15 versions']))
 		.pipe(gulp.dest('app'))
 		.pipe(browserSync.reload({stream: true}))
