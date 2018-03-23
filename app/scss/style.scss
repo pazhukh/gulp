@@ -6,27 +6,7 @@ Description: this is them for Mr. Park
 Version: 1.0
 */
 
-@mixin backgroundImage{
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin backgroundGradient{
-	content: '';
-	position: absolute;
-	display: block;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
+@import 'vars-mixins'
 
 /* @font-face {
 	font-family: 'Proxima Nova';
