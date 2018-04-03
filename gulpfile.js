@@ -4,13 +4,13 @@ var gulp               = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer')
 
 gulp.task('sass', function() {
-	return gulp.src('app/scss/*.scss')
+	return gulp.src('app/scss/style.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sass({
 			outputStyle: 'expanded'
 		}))
 		.pipe(autoprefixer(['last 15 versions']))
-		.pipe(gulp.dest('app'))
+		.pipe(gulp.dest('app/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });
 
@@ -31,4 +31,3 @@ gulp.task('watch', ['sass', 'browser-sync'], function() {
 });
 
 gulp.task('default', ['watch']);
-
